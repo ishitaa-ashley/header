@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<link href="fliphead.css" type="text/css" rel="stylesheet">
+<meta name="viewport" content="width=device-width" initial="1">
+</head>
+<body>
+	<header class="head">
+		<img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-logo_9fddff.png" id="logo">
+		<input type="search" placeholder="search here" class="srch">
+		
+		<div class="menu">
+			<div><button class="btn">Account &nbsp<i class="arrow down"></i></button></div>
+			<div><i class="arrow up" id="toparrow" ></i></div>
+				<div class="content">
+					<a href="#menu1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" class="" viewBox="0 0 16 14"><g fill="none" fill-rule="evenodd"><path d="M-2-3h20v20H-2V-3zm8.333 4.167h3.334v1.666H6.333V1.167zm0 0h3.334v1.666H6.333V1.167z"></path><path fill="#2874F0" fill-rule="nonzero" d="M6.467 10.067V9.3h-5.36L1.1 12.367c0 .85.682 1.533 1.533 1.533h10.734c.85 0 1.533-.682 1.533-1.533V9.3H9.533v.767H6.467zm7.666-6.9H11.06V1.633L9.526.1H6.459L4.926 1.633v1.534h-3.06c-.843 0-1.533.69-1.533 1.533V7c0 .851.683 1.533 1.534 1.533h4.6V7h3.066v1.533h4.6c.844 0 1.534-.69 1.534-1.533V4.7c0-.843-.69-1.533-1.534-1.533zm-4.6 0H6.467V1.633h3.066v1.534z"></path></g></svg>&nbsp Menu</a>
+					<a href="#menu2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 14 17"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z"></path></g></svg>&nbsp Menu2</a>
+					<a href="#menu3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 18 10"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0"></path></g></svg>&nbsp Menu3</a>
+				</div>
+			
+			</div>
+			<div class="menu1">
+				<button onclick="opend()" id="drop" class="btn">Myorders &nbsp <i class="arrow down"></i></button>
+				<i class="arrow up" id="toparrow"></i>
+  				<div id="myDropdown" class="content" id="setmargin">
+  					
+    				<a href="#menu1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" class="" viewBox="0 0 16 14"><g fill="none" fill-rule="evenodd"><path d="M-2-3h20v20H-2V-3zm8.333 4.167h3.334v1.666H6.333V1.167zm0 0h3.334v1.666H6.333V1.167z"></path><path fill="#2874F0" fill-rule="nonzero" d="M6.467 10.067V9.3h-5.36L1.1 12.367c0 .85.682 1.533 1.533 1.533h10.734c.85 0 1.533-.682 1.533-1.533V9.3H9.533v.767H6.467zm7.666-6.9H11.06V1.633L9.526.1H6.459L4.926 1.633v1.534h-3.06c-.843 0-1.533.69-1.533 1.533V7c0 .851.683 1.533 1.534 1.533h4.6V7h3.066v1.533h4.6c.844 0 1.534-.69 1.534-1.533V4.7c0-.843-.69-1.533-1.534-1.533zm-4.6 0H6.467V1.633h3.066v1.534z"></path></g></svg>&nbsp Menu</a>
+					<a href="#menu2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 14 17"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z"></path></g></svg>&nbsp Menu2</a>
+					<a href="#menu3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 18 10"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0"></path></g></svg>&nbsp Menu3</a>
+  				</div>
+			</div>
+			<div class="menu">
+			<div><button class="btn">More &nbsp<i class="arrow down"></i></button></div>
+			<div><i class="arrow up" id="toparrow"></i></div>
+				<div class="content">
+					
+					<a href="#menu1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" class="" viewBox="0 0 16 14"><g fill="none" fill-rule="evenodd"><path d="M-2-3h20v20H-2V-3zm8.333 4.167h3.334v1.666H6.333V1.167zm0 0h3.334v1.666H6.333V1.167z"></path><path fill="#2874F0" fill-rule="nonzero" d="M6.467 10.067V9.3h-5.36L1.1 12.367c0 .85.682 1.533 1.533 1.533h10.734c.85 0 1.533-.682 1.533-1.533V9.3H9.533v.767H6.467zm7.666-6.9H11.06V1.633L9.526.1H6.459L4.926 1.633v1.534h-3.06c-.843 0-1.533.69-1.533 1.533V7c0 .851.683 1.533 1.534 1.533h4.6V7h3.066v1.533h4.6c.844 0 1.534-.69 1.534-1.533V4.7c0-.843-.69-1.533-1.534-1.533zm-4.6 0H6.467V1.633h3.066v1.534z"></path></g></svg>&nbsp Menu</a>
+					<a href="#menu2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 14 17"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z"></path></g></svg>&nbsp Menu2</a>
+					<a href="#menu3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 18 10"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0"></path></g></svg>&nbsp Menu3</a>
+				</div>
+			
+			</div>
+
+	</header>
+
+
+	<script>
+		document.getElementById("drop").onclick=function() { opend()};
+function opend() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) {
+
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+</body>
+</html>

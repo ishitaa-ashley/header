@@ -1,0 +1,124 @@
+.head
+{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: #2874F0;
+}
+#logo
+{
+	float: left;
+	margin-left: 60px;
+	margin-top: 20px;
+	height: 40px;
+}
+.btn
+{
+	background-color: #2874F0;
+	font-size: 15px;
+	height: 40px;
+	color: white;
+	text-align: center;
+	margin-left: 0px;
+}
+.btn:last-child
+{
+	margin-right: 0px;
+}
+.menu, .menu1
+{
+	display: inline;
+	float: right;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.content 
+{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	min-width: 150px;
+	margin-top: -25px;
+	background-color: white;
+	border-color: black;
+}
+.content #setmargin
+{
+	margin-top: 40px;
+}
+.menu:hover #toparrow
+{
+	display: block;
+}
+#toparrow
+{
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: white;
+	display: none;
+}
+.list
+{
+	margin-top: 30px;
+}
+
+
+.content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-top: solid #EFEFEF 1px;
+}
+.content a:last-child
+{
+	border-bottom: solid #EFEFEF 1px;
+
+}
+.menu:hover .content {
+    display: block;
+}
+
+.menu, .menu1
+{
+	position: relative;
+    display: inline-block;
+}
+.show
+{
+	display: block;
+}
+.content a:hover
+{
+	background-color: #EFEFEF;
+}
+
+.srch
+{
+	margin-top: 25px;
+	margin-left: 15px;
+	width: 400px;
+	padding-left: 10px;
+	border:none;
+	height: 35px;
+	border-radius: 4px;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT79yb5f_BRKRh23scxy24nUxAFfmPQGnOaAXWwWKoCOywTH4mtLA");
+	background-repeat: no-repeat;
+    background-position: right; 
+    background-size: 35px 35px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
